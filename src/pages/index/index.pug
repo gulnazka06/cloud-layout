@@ -1,0 +1,20 @@
+head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="/index/index.css")
+include ../../components/left-sidebar/left-sidebar
+include ../../components/main/main
+include ../../components/right-sidebar/right-sidebar
+script.
+    const rightSidebarNotification = document.querySelector('.notification > img');
+    const rightSidebarNew = document.querySelector('.right-sidebar');
+
+    function rightSidebarNotificationClick() {
+        if (rightSidebarNew.classList.contains('open')) {
+            rightSidebarNew.classList.remove('open');
+        } else {
+            rightSidebarNew.classList.add('open');
+        }
+    }
+
+    rightSidebarNotification.onclick = rightSidebarNotificationClick;

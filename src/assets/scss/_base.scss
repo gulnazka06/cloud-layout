@@ -1,0 +1,71 @@
+@import "typography";
+
+:root {
+  --white: #ffffff;
+  --sidebar-bg-color: #4C52BC;
+  --sidebar-bg-color-rgb:76, 82, 188;
+  --text-color: #0E1B42;;
+  --grey: #8186AD;
+  --input-color: #CACEE7;
+  --input-color-rgb: 202, 206, 231;
+  --card-bg-color: #F7F8FB;
+  --view-color: #8186AD;
+  --br-color: #F6F7FA;
+  --hr-bg-color: #30358A;
+  --yellow-color: #F8D9AF;
+  --search-color: #8F94B8;
+  --br-little-color: #C4E2E6;
+  --line-bg-color: #DDE2EF;
+  --black-span-color: #132046;
+  --sircle-bg-color: #F98E73;
+}
+
+body {
+  font-family: Montserrat, -apple-system, sans-serif;
+  display: grid;
+  grid-template-columns: minmax(auto, 252px) auto minmax(auto, 360px);
+  margin: 0;
+}
+
+h1 {
+  font-size: 20px;
+  line-height: 24px;
+
+}
+
+h1, h2, h3 {
+  color: var(--text-color);
+  margin: 0;
+  letter-spacing: .2px;
+  font-weight: 500;
+}
+
+h2, a {
+  font-size: 14px;
+  line-height: 20px;
+
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 20px;
+
+}
+
+a {
+  color: var(--white);
+  opacity: .6;
+  font-weight: 500;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}

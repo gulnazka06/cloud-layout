@@ -1,0 +1,119 @@
+@import "../../components/activity/activity";
+
+.right-sidebar {
+  padding: 36px 0;
+  border-left: 2px solid var(--br-color);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 50px;
+
+    .notification {
+      position: relative;
+      display: block;
+      margin-right: 32px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 7px;
+        height: 7px;
+        background-color: var(--sircle-bg-color);
+        border-radius: 50%;
+        top: 0;
+        right: 0;
+        transform: translateX(50%) translateY(-50%);
+      }
+    }
+
+    .account {
+      display: flex;
+      align-items: center;
+
+      img {
+
+        &:last-child {
+          transform: rotate(90deg);
+        }
+      }
+
+      span {
+        margin: 0 8px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--text-color);
+      }
+    }
+  }
+
+  .activities {
+    padding: 112px 50px 0;
+
+    .divider {
+      width: 100%;
+      border-radius: 4px;
+      background-color: var(--br-color);
+      height: 2px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-top: 4px;
+
+      &::before {
+        content: '';
+        width: 15%;
+        border-radius: 4px;
+        height: 4px;
+        background-color: var(--br-little-color);
+        position: absolute;
+      }
+    }
+  }
+
+  .activity {
+    margin-top: 32px;
+    padding: 0 50px;
+  }
+
+  .card {
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    border: 2px solid var(--br-color);
+    height: 260px;
+    position: relative;
+
+    h3 {
+      padding-top: 24px;
+    }
+
+    h4 {
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+      letter-spacing: .4px;
+      color: var(--view-color);
+      margin: 10px 0 28px;
+    }
+
+    img {
+
+      &:first-child {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+      }
+    }
+  }
+}
+
